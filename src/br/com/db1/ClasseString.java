@@ -2,39 +2,8 @@ package br.com.db1;
 
 import java.util.Arrays;
 
-public class MinhaPrimeiraClasseEmJava {
+public class ClasseString {
 
-	public Boolean ehPar(Integer valor1) {
-		return valor1 % 2 == 0;		
-	}
-	
-	public Boolean ehMaior(Integer valor1, Integer valor2){
-		return valor1 > valor2;
-	}
-	
-	public Integer somaDoisNumeros(Integer valor1, Integer valor2) {
-		return valor1 + valor2;
-	}
-	
-	public Integer subtraiDoisNumeros(Integer valor1, Integer valor2) {
-		return valor1 - valor2;
-	}
-	
-	public Integer multiplicaDoisNumeros(Integer valor1, Integer valor2) {
-		return valor1 * valor2;
-	}
-	
-	public Integer divideDoisNumeros(Integer valor1, Integer valor2){
-		return valor1 / valor2;
-	}
-	
-	/*
-	public Integer imparesAte100(Integer valor1) {
-		for (Integer impares = valor1; impares == 100; impares++) {
-			return (impares % 2 == 1);
-		}
-	}
-	*/
 	
 	public String devolveMaiusculas(String texto1) {
 		return texto1.toUpperCase();
@@ -90,35 +59,4 @@ public class MinhaPrimeiraClasseEmJava {
 	public String devolveInvertido(String texto1) {
 		return new StringBuilder(texto1).reverse().toString();
 	}
-	
-	public Double qualEhMenorEntreDoisDoubles(Double valor1, Double valor2) {
-		if (valor1 < valor2) {
-			return valor1;
-		}
-		else {
-			return valor2;
-		}
-	}
-	
-	public Double qualEhMenorEntreTresDoubles(Double valor1, Double valor2, Double valor3) {
-		if (valor1 < valor2 && valor1 < valor3) {
-			return valor1;
-		}
-		else if (valor2 < valor1 && valor2 < valor3) {
-			return valor2;
-		}
-		else {
-			return valor3;
-		}
-	}
-	
-	public Double mediaTresNumeros(Double valor1, Double valor2, Double valor3) {
-		return (valor1 + valor2 + valor3)/3;
-	}
-	
-	public Integer areaTriangulo(Integer base, Integer altura) {
-		return (base*altura)/2;
-	}
-	
-
 }
